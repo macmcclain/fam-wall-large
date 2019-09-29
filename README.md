@@ -26,3 +26,8 @@ Rasberry Pi
 Enable the ACER touch screen.
 vi /boot/cmdline.txt
 append dwc_otg.speed=1
+
+
+sudo apt install xinput-calibrator 
+
+DISPLAY=:0 xinput set-prop 6  "Coordinate Transformation Matrix" 0 1 0 -1 0 1 0 0 1
